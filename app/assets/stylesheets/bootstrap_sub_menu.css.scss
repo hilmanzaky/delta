@@ -1,0 +1,198 @@
+.subnav {
+    background-color: #EEEEEE;
+    background-image: -moz-linear-gradient(center top , #F5F5F5 0%, #EEEEEE 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px 4px 4px 4px;
+    height: 36px;
+    width: 100%;
+    z-index: 1020;
+}
+
+.subnav-fixed {
+    border-color: #D5D5D5;
+    border-radius: 0 0 0 0;
+    border-width: 0 0 1px;
+    box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 5px rgba(0, 0, 0, 0.1);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    z-index: 1020;
+}
+
+.subnav-fixed .nav {
+    margin: 0 auto;
+    padding: 0 1px;
+    width: 938px;
+}
+
+.subnav-fixed .nav {
+    width: 1168px;
+}
+
+.subhead {
+    margin-bottom: 9px;
+    padding-bottom: 0;
+}
+
+.jumbotron {
+    position: relative;
+}
+
+.subnav .nav > li > a {
+    border-left: 1px solid #F5F5F5;
+    border-radius: 0 0 0 0;
+    border-right: 1px solid #E5E5E5;
+    margin: 0;
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
+
+#nav {
+    margin: 0;
+    background-color: #EEEEEE;
+    background-image: -moz-linear-gradient(center top , #F5F5F5 0%, #EEEEEE 100%);
+    background-repeat: repeat-x;
+    line-height: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#nav li {
+    float: left;
+    position: relative;
+    list-style: none;
+        z-index: 1020;
+}
+/* main level link */
+#nav a {
+    color: #666;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-shadow: 0 1px 1px rgba(255,255,255, .3);
+    border-left: 1px solid #F5F5F5;
+    border-radius: 0 0 0 0;
+    border-right: 1px solid #E5E5E5;
+    margin: 0;
+}
+#nav a:hover {
+    background: #000;
+    color: #fff;
+}
+/* main level link hover */
+#nav .current a, #nav li:hover > a {
+    background: -moz-linear-gradient(center top , #EEEEEE 0%, #E9E9E9 100%);
+    color: #666;
+    border-top: solid 1px #f8f8f8;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+    box-shadow: 0 1px 1px rgba(0,0,0, .2);
+    text-shadow: 0 1px 0 rgba(255,255,255, 1);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+/* sub levels link hover */
+#nav ul li:hover a, #nav li:hover li a {
+    background: none;
+    border: none;
+    color: #666;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+#nav ul a:hover {
+    background: #999999 !important;
+    color: #fff !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0, .1);
+}
+/* dropdown */
+#nav li:hover > ul {
+    display: block;
+}
+/* level 2 list */
+#nav ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 185px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #ddd repeat-x 0 0;
+    border: solid 1px #b4b4b4;
+
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-right-radius: 9px;
+    -moz-border-radius-topright: 9px;
+
+    -webkit-border-bottom-left-radius: 9px;
+    -moz-border-radius-bottomleft: 9px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+    box-shadow: 0 1px 3px rgba(0,0,0, .3);
+}
+#nav ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+#nav ul a {
+    font-weight: normal;
+    text-shadow: 0 1px 0 #fff;
+}
+/* level 3+ list */
+#nav ul ul {
+    left: 185px;
+    top: 0px;
+}
+/* rounded corners of first and last link */
+#nav ul li:first-child > a {
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-right-radius: 9px;
+    -moz-border-radius-topright: 9px;
+}
+#nav ul li:last-child > a {
+    -webkit-border-bottom-left-radius: 9px;
+    -moz-border-radius-bottomleft: 9px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+}
+/* clearfix */
+#nav:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] #nav {
+    display: block;
+}
+* html #nav {
+    height: 1%;
+}
+
+.subnav-fixed #nav {
+    margin: 0 auto;
+    padding: 0 1px;
+    width: 1168px;
+}
+
+#nav .caret {
+    margin-top: 7px;
+}

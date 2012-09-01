@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+}
+footer {
+    position: relative;
+    color: #666;
+    /*    background: #222;*/
+    background: url('footer.png') center;
+    /*    background-image: url('footer.png');*/
+    padding: 12px 0 18px 0;
+    /*    border-top: 1px solid #000;*/
+    height: 570px;
+}
+footer a {
+    color: #999;
+}
+footer a:hover {
+    color: #efefef;
+}
+
+footer .boy_left {
+    background: url('boy_left.png') center;
+    width: 117px;
+    height: 196px;
+    position: absolute;
+    right: 450px;
+    bottom: 140px;
+}
+
+footer .boy_left .facebook {
+    background: url('facebook_gray.png');
+    width: 64px;
+    height: 64px;
+}
+
+footer .boy_left .facebook:hover {
+    background: url('facebook.png');
+}
+
+footer .boy_right {
+    background: url('boy_right.png') center;
+    width: 119px;
+    height: 180px;
+    position: absolute;
+    right: 320px;
+    bottom: 143px;
+}
+
+footer .boy_right .twitter {
+    background: url('twitter_gray.png');
+    width: 64px;
+    height: 64px;
+    float: right;
+}
+
+footer .boy_right .twitter:hover {
+    background: url('twitter.png');
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -63px;
+}
+.push {
+    height: 63px;
+}
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container {
+    padding-top: 60px;
+}

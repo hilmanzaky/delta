@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="span6">
+    <%= render :partial => 'product_images/form' if can? :create, @product_image %>
+    <%= render :partial => 'product_images/list' %>
+  </div>
+  <div class="span6">
+    <%= render :partial => 'show', :locals => { :product => @product, :product_images => @product_images } %>
+    <%= link_to 'Ubah', edit_product_path(@product), :class => 'btn' if can? :update, @product %>
+    <%#= link_to 'Kembali', products_path, :class => 'btn' %>
+    <%= link_to 'Kembali', :back, :class => 'btn' %>
+  </div>
+</div>
